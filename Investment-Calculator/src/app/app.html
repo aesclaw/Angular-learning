@@ -1,0 +1,7 @@
+<app-header />
+
+<app-invesment-form />
+
+@if (investmentCalculatorService.anuualData().length > 0) {
+    <app-investment-results [investmentResults]="investmentCalculatorService.anuualData()" />
+}
